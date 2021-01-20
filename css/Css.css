@@ -1,0 +1,101 @@
+
+body{
+	background-color: white;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+.contenedor{
+	padding: 0px;
+	height: 250px;
+	color: yellow;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	display: flex;
+	align-items: center;    
+	justify-content: center;
+
+}
+.contenedor1{
+	padding: 0px;
+}
+
+
+.hero {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(31, 34, 118, 0.5);
+    z-index: -5;
+}
+
+.navbar {
+	background-color: rgb(69, 106, 171);
+	color: white;
+	font-size: 25px;
+	top: 0;
+    bottom: 0;
+}
+.weather {
+	border:1px solid white;
+	margin-top: 10rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: white;
+}
+
+.weather-head {
+	height: 50%;
+}
+
+#icon-desc {
+	font-size: 5rem;
+	padding-top: 2rem;
+}
+
+.hum, .pres, .wind { /* para lineas arriba y abajo de la letra */
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	font-size: 2rem;
+}
+
+#description {
+	font-size: 2rem;
+}
+
+#Cel {
+	font-size: 7rem;
+}
+
+#icon-thermometer {
+	font-size: 5rem;
+}
+
+#humidity, #press, #wind { /* para la letra */
+	font-size: 3rem;
+	/*padding-top: 1rem;
+	padding-bottom: 1rem;*/
+}
+
+.texto_responsive:before{
+  content: attr(data-desktoptext);
+}
+
+@media (max-width:1200px) {
+    .texto_responsive:before {
+        content: attr(data-tablettext);
+    }
+}
+
+@media (max-width:700px){
+    .texto_responsive:before {
+        content: attr(data-phonetext);
+    }
+}
+
+	

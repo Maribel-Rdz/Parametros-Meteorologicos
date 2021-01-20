@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Par&aacute;metros meteorol&oacute;gicos</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!--JS-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/raphael.2.1.0.min.js"></script>
+	<script src="js/justgage.1.0.1.min.js"></script>
+
+	<!--Weather icon-->
+	<link rel="stylesheet" href="css/dashsamee.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+
+	<!--Fusion charts-->
+	<script type="text/javascript" src="js/fusioncharts.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.charts.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.widgets.js"></script>
+    <script type="text/javascript" src="js/fusiondesign.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.theme.fusion.js"></script>
+
+    <!--css-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/Css.css">
+	
+</head>
+
+<header>MEDICI&Oacute;N DE PAR&Aacute;METROS METEOROL&Oacute;GICOS</header>
+
+<body>
+
+	<div class="container-fluid">
+			<section class="main">
+
+				<decimal1 class="col-xs-12 col-sm-12 col-md-3">
+						<p id="pwm1" class="gauge"></p>
+						<div><img id="A"></div>
+				</decimal1>
+
+				<decimal2 class="col-xs-12 col-sm-12 col-md-3">
+						<p id="volt" class="gauge"></p>	
+						<img src="img/planta1.jpg" class= "gauge">
+				</decimal2>
+					
+				<decimal3 class="col-xs-12 col-sm-12 col-md-3">
+						<p id="ampe" class="gauge"></p>
+						<div><img id="M" class="gauge"></div>
+				</decimal3>
+					
+				<flotante class="col-xs-12 col-sm-12 col-md-3">
+						<p id="rpm" class="gauge"></p>	
+						<div><img id="C" class="gauge"></div>	
+				</flotante>
+				
+			</section>	
+	</div>
+
+	<!--En este apartado se encuentra la grafica-->
+	<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 contenedor1">
+         	<div class="col-md-12 contenedor" id="Grafica5"></div>
+    </div>
+
+	<footer>
+			<div class="container">	
+    				<span class="texto_responsive" data-desktoptext="ELISA MARIBEL RODRIGUEZ SOLIS" data-phonetext="ELISA MARIBEL RODRIGUEZ SOLIS"></span>
+			</div>
+	</footer>
+
+	<script src="js/TempAmb.js"></script>	
+	<script src="js/humedad.js"></script>
+	<script src="ColorDeAlerta.js"></script>
+	<script src="js/presion.js"></script>
+	<script src="js/hum-planta.js"></script>
+    <script src="EstadoDelClima.js"></script>
+    <script src="EstadoDeAlerta.js"></script>
+    <script src="js/Motor-RPM.js"></script>	
+	<script src="js/jquery.js"></script>
+	<script src="js/justgage.js"></script>
+	<script src="https://code.iconify.design/1/1.0.2/iconify.min.js"></script>
+
+</body>
+</html>
